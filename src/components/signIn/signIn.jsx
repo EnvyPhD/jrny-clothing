@@ -53,8 +53,17 @@ handleSubmit = event => {
                     value={this.state.password} 
                     required
                     handleChange={this.handleChange}/>
-
-                    <CustomButton onClick={signInWithGoogle}> Sign In</CustomButton>
+                <div className='buttons'>
+                    <CustomButton 
+                    type ='submit'>
+                        Sign In
+                    </CustomButton>
+                    <CustomButton 
+                        onClick={signInWithGoogle} 
+                        isGoogleSignIn>
+                        Sign In
+                    </CustomButton>
+                </div>
                 </form>
             </div>
         )
